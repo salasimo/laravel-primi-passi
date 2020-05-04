@@ -147,9 +147,23 @@ foreach ($cards as $key => $card) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href={{asset("css/app.css")}}>
     <title>La Molisana</title>
 </head>
 <body>
+    <header>
+        <img src={{asset("img/logo.png")}} alt="La Molisana">
+        <nav>
+            <div class="main-nav">
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
 
 @if(!empty($lunghe))    
 <div class="cards">
