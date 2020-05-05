@@ -22,5 +22,69 @@ header {
 
 header .main-nav ul li {
   display: inline-block;
+  padding: 20px 5px;
+}
+
+header .main-nav ul li:hover {
+  background-color: lightblue;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 0;
+  background-color: violet;
+}
+
+main .cards h2 {
+  margin-top: 30px;
+  padding: 5px;
+}
+
+main .cards .cards-wrapper {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+main .cards .cards-wrapper .card {
+  position: relative;
+  width: calc(100% / 3);
+  min-width: 250px;
+}
+
+main .cards .cards-wrapper .card img {
+  width: 95%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main .cards .cards-wrapper .card .card-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+main .cards .cards-wrapper .card .card-link h3 {
+  cursor: pointer;
+}
+
+main .cards .cards-wrapper .card img:hover + .card-link,
+main .cards .cards-wrapper .card .card-link:hover {
+  opacity: 1;
 }
 
