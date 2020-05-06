@@ -1,0 +1,37 @@
+footer .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 1600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    & > div {
+        padding: 40px;
+    }
+    img.img-bg-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 80px;
+    }
+    .footer-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    ul {
+        margin-right: 30px;
+    }
+    li {
+        list-style: none;
+        margin-bottom: 5px;
+        &.list-title {
+            font-size: 1.5em;
+            color: #0d2240;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    }
+}

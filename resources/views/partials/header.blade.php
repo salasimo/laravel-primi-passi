@@ -1,10 +1,17 @@
 <header>
-    <img src={{asset("img/logo.png")}} alt="La Molisana">
-    <nav class="main-nav">
+    <img src="{{asset('img/logo.png')}}" alt="La Molisana">
+    <nav>
         <ul>
-            <li><a href="{{route("home")}}">Home</a></li>
-            <li><a href="{{route("prodotti")}}">Prodotti</a></li>
-            <li><a href="#">News</a></li>
+            <li class="{{(url()->current() == route('home')) ? 'active' : ''}}">
+                <a href="{{route('home')}}">Home</a>
+            </li>
+            
+            <li class="{{(url()->current() == route('prodotti')) ? 'active' : ''}}">
+                <a href="{{route('prodotti')}}">Prodotti</a>
+            </li>
+            <li class="{{(url()->current() == route('news')) ? 'active' : ''}}">
+                <a href="{{route('news')}}">News</a>
+            </li>
         </ul>
     </nav>
 </header>
