@@ -25,7 +25,7 @@ Route::get('/products', function () {
 
 Route::get('/products/{id}', function ($id) {
     return view('product', compact("id"));
-})->name('products.show')
+})->name('products.show');
 
 //==========================================
 
