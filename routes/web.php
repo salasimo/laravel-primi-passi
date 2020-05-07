@@ -21,11 +21,18 @@ Route::get('/products', function () {
     return view('products');
 })->name('prodotti');
 
+//Rotta prodotto singolo ===================
+
+Route::get('/products/{id}', function ($id) {
+    return view('product', compact("id"));
+})->name('products.show')
+
+//==========================================
+
 Route::get('/contatti', function () {
     return view('contacts');
 })->name('contatti');
 
-//admin
 Route::get('news', function () {
     return view('news');
 })->name('news');
