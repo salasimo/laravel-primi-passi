@@ -61,3 +61,34 @@ main {
         margin: 0 auto;
     }
 }
+
+main .container-prodotto {
+    width: 100vw;
+    background-color: #b8dae4;
+    .product {
+        margin: 0 auto;
+        max-width: 800px;
+        color: #002d75;
+        text-align: center;
+        img {
+            width: 100%;
+            max-width: 800px;
+        }
+        p,
+        ol {
+            padding: 40px 0;
+            margin: 0 auto;
+            max-width: 90vw;
+            text-align: left;
+        }
+        ol {
+            margin-left: 40px;
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: normal;
+            padding-top: 30px;
+            text-align: center;
+        }
+    }
+}

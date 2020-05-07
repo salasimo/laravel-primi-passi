@@ -13,11 +13,12 @@
 @endsection
 
 @section('mainContent')
-<div class="container">
+<div class="container-prodotto">
     <div class="product">
-    <img src="{{$prodotto["src"]}}" alt="{{$prodotto["titolo"]}}">
-    <h1>{{$prodotto["titolo"]}}</h1>
-    <p>{{$prodotto["descrizione"]}}</p>
+        <h1>{{$prodotto["titolo"]}}</h1>
+        <img src="{{$prodotto["src-h"]}}" alt="{{$prodotto["titolo"]}}">
+        <img src="{{$prodotto["src-p"]}}" alt="">
+        <p>{!!$prodotto["descrizione"]!!}</p>
     </div>
 </div>
 
