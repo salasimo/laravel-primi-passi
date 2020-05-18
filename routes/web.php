@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,9 +18,7 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/products', function () {
-    return view('products');
-})->name('prodotti');
+Route::get('/', "ProductController@index")->name('prodotti');
 
 //Rotta prodotto singolo ===================
 
